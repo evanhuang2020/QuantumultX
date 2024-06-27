@@ -2,11 +2,11 @@
 高德打车签到
 仅QX测试，青龙面板，其他自测
 获取Cookie方法 ，QX开重写，进入【高德地图/微信/支付宝 小程序[高德打车]，打车，福利中心】，任意一端获取成功即可3端签到
-
+青龙增加环境变量     GD_Val = '{"userId":"xx","adiu":"xx","sessionid":"xx"}'
 自动签到 地图APP/微信小程序、支付宝小程序
 由于不懂JS，代码是硬堆的
 
-环境变量     GD_Val = '{"userId":"xx","adiu":"xx","sessionid":"xx"}'
+
 
 ======调试区|忽略======
 # ^https:\/\/(m5(|-zb)|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/activity\/current)\/query|common\/(alipaymini|wxmini)\?_ENCRYPT=) url script-response-body http://192.168.2.170:8080/ampDache.js
