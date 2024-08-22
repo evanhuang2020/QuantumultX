@@ -1,12 +1,8 @@
-// 清除变量
-$prefs.clearValueForKey('PP_TOKEN');
+// 清除名为 'PP_TOKEN' 的环境变量
+$prefs.removeValueForKey('PP_TOKEN');
 
-// 检查是否清除成功
-let token = $prefs.valueForKey('PP_TOKEN');
-if (!token) {
-  console.log("PP_TOKEN 已成功清除");
-} else {
-  console.log("PP_TOKEN 仍然存在");
-}
+// 打印日志以确认清除成功
+console.log("PP_TOKEN 清除成功");
 
+// 结束脚本
 $done();
